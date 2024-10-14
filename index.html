@@ -11,16 +11,20 @@
     <!-- input section start  -->
     <div class="flex mx-auto w-5/12 my-14">
       <input
+        id="product-input"
         class="text-xl font-semibold p-5 outline-none border-2 mx-2 border-black rounded-lg"
         type="text"
         placeholder="Enter Your Product"
       />
       <input
+        id="quantity-input"
         class="text-2xl font-semibold p-5 outline-none border-2 mx-2 border-black rounded-lg"
         type="text"
         placeholder="Enter Your Quantity"
       />
       <button
+        onclick="getInputField()"
+        id="add-btn"
         class="text-2xl font-bold text-emerald-50 hover:text-sky-800 hover:bg-sky-100 hover:border-2 hover:border-sky-900 transition-colors bg-sky-800 mx-2 px-20 rounded-xl"
       >
         Add
@@ -28,18 +32,25 @@
     </div>
     <!-- input section close  -->
     <!-- container section start  -->
-        <div>
-            <div class="border-2 shadow-lg border-slate-500 h-[560px] w-7/12 mx-auto rounded-xl p-10">
-                <h1 class="text-center text-4xl text-fuchsia-700 font-bold my-10">Your Product And Product Quantity Section </h1>
-                <!-- product containe section start  -->
-                <div class="">
-                    <ul id="product-container" class="text-2xl text-cyan-500 font-semibold list-disc mx-auto w-4/12 text-center">
-                        <li>Phone: 12</li>
-                    </ul>
-                </div>
-                <!-- product containe section close  -->
-            </div>
+    <div>
+      <div
+        class="border-2 shadow-lg border-slate-500 h-[560px] w-7/12 mx-auto rounded-xl p-10"
+      >
+        <h1 class="text-center text-4xl text-fuchsia-700 font-bold my-10">
+          Your Product And Product Quantity Section
+        </h1>
+        <!-- product containe section start  -->
+        <div class="">
+          <ul
+            id="product-container"
+            class="text-2xl text-cyan-500 font-semibold mx-auto w-4/12 text-center"
+          >
+            <li>Phone: 12</li>
+          </ul>
         </div>
+        <!-- product containe section close  -->
+      </div>
+    </div>
     <!-- container section close -->
     <script src="./script/app.js"></script>
   </body>
