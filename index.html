@@ -4,13 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>card vew with local Storage</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div>
-      <input type="text" placeholder="Enter Your Product" />
-      <input type="text" placeholder="Enter Your Quantity" />
+    <!-- input section start  -->
+    <div class="flex mx-auto w-5/12 my-14">
+      <input
+        class="text-xl font-semibold p-5 outline-none border-2 mx-2 border-black rounded-lg"
+        type="text"
+        placeholder="Enter Your Product"
+      />
+      <input
+        class="text-2xl font-semibold p-5 outline-none border-2 mx-2 border-black rounded-lg"
+        type="text"
+        placeholder="Enter Your Quantity"
+      />
+      <button
+        class="text-2xl font-bold text-emerald-50 hover:text-sky-800 hover:bg-white hover:border-2 hover:border-sky-900 transition-colors bg-sky-800 mx-2 px-20 rounded-xl"
+      >
+        Add
+      </button>
     </div>
+    <!-- input section close  -->
+    <!-- container section start  -->
 
+    <!-- container section close -->
     <script src="./script/app.js"></script>
   </body>
 </html>
